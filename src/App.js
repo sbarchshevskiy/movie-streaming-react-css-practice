@@ -1,6 +1,6 @@
+import './App.scss'
+import Home from "./components/home/Home";
 
-function App() {
-  return('')
+export default function App() {
+  return <Home/>;
 }
-
-export default App;
