@@ -18,15 +18,14 @@ export default function Navbar() {
         <div className="left">
           <img src={logo} alt="logo" className="logo"
           />
-          <span>Homepage</span>
-          <span>Series</span>
+          <span>Home</span>
+          <span>TV Shows</span>
           <span>Movies</span>
-          <span>New and Popular</span>
+          <span>New & Popular</span>
           <span>My List</span>
         </div>
         <div className="right">
           <Search className='icon'/>
-          <span>KIDS</span>
           <Notifications className='icon'/>
           <img src={profilePic} alt="profile-pic" className='icon'/>
           <div className="profile">

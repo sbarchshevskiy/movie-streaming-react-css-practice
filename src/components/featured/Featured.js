@@ -2,7 +2,8 @@ import './Featured.scss';
 import image from "../../media/girl_sha_002.jpeg";
 import {InfoOutlined, PlayArrow} from "@material-ui/icons";
 import baywatch from "../../media/baywatch.png"
-export default function Featured() {
+export default function Featured({type}) {
+
   return (
     <div className="featured">
       {type && (
@@ -10,6 +11,15 @@ export default function Featured() {
           <span>{type === "movie" ? "Movies" : "Series"}</span>
           <select name="genre" id="genre">
             <option>Genre</option>
+            <option value="adventure">Adventure</option>
+            <option value="comedy">Comedy</option>
+            <option value="romance">Romance</option>
+            <option value="thriller">Thriller</option>
+            <option value="crime">Crime</option>
+            <option value="fantasy">Fantasy</option>
+            <option value="sci-fi">Sci-Fi</option>
+            <option value="documentary">Documentary</option>
+            <option value="drama">Drama</option>
           </select>
         </div>
       )}
