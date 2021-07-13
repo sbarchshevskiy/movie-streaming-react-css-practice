@@ -16,6 +16,7 @@ export default function Navbar() {
           <span>New and Popular</span>
           <span>My List</span>
 
+
         </div>
         <div className="right">
           <Search className='icon'/>
@@ -29,6 +30,7 @@ export default function Navbar() {
               <span>Settings</span>
               <span>Logout</span>
             </div>
+
           </div>
 
 

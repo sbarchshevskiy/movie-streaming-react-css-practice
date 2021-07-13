@@ -1,6 +1,9 @@
 .nav{
   color: white;
   font-size: 14px;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
 
   .container{
     display: flex;
