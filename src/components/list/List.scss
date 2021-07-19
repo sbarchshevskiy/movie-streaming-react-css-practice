@@ -12,14 +12,7 @@
   .wrapper{
     position: relative;
 
-    .container{
-      margin-top: 10px;
-      margin-left: 50px;
-      display: flex;
-      width: max-content;
-      transform: translate(0px);
-      transition: all 2s ease;
-    }
+
     .slider{
       width: 50px;
       height: 100%;
@@ -40,6 +33,14 @@
         right: 0;
       }
 
+    }
+    .container{
+      margin-top: 10px;
+      margin-left: 50px;
+      display: flex;
+      width: max-content;
+      transform: translate(0px);
+      transition: all 1s ease;
     }
 
 

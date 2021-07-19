@@ -1,22 +1,26 @@
 import './List.scss';
 import {ArrowBackIosOutlined, ArrowForwardIosOutlined} from "@material-ui/icons";
 import ListItem from "../listItems/ListItem";
-import {useRef} from "react";
+import {useRef, useState} from "react";
 
 export default function List(){
+  const [sliderIndex, setSliderIndex] = useState(0)
 
   const listRef = useRef()
 
   const handleClick = (direction) => {
     let distance = listRef.current.getBoundingClientRect().x - 50;
-    if(direction === "right"){
-      listRef.current.style.transform = `translate(${230 + distance}px)`;
+    if(direction === "right" && sliderIndex > 0){
+      setSliderIndex(sliderIndex - 1)
+      listRef.current.style.transform = `translate(${230 + distance}px)`;    console.log('right')
     }
-    if(direction === "left"){
+    if(direction === "left" && sliderIndex < 5){
+      setSliderIndex(sliderIndex - 1)
       listRef.current.style.transform = `translate(${-230 + distance}px)`;
     }
 
     console.log('distance:', distance)
+
   }
   return(
     <div className="list">
